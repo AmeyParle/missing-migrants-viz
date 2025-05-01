@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2c9d2204.css",
+    "main.js": "/static/js/main.fe5d58af.js",
+    "static/js/453.01d230ed.chunk.js": "/static/js/453.01d230ed.chunk.js",
+    "static/media/missing-migrants-image.jpg": "/static/media/missing-migrants-image.c2d0fde25d544fe72edf.jpg",
+    "index.html": "/index.html",
+    "main.2c9d2204.css.map": "/static/css/main.2c9d2204.css.map",
+    "main.fe5d58af.js.map": "/static/js/main.fe5d58af.js.map",
+    "453.01d230ed.chunk.js.map": "/static/js/453.01d230ed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c9d2204.css",
+    "static/js/main.fe5d58af.js"
+  ]
+}
