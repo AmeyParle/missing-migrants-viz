@@ -1,0 +1,24 @@
+/* CorrelationMatrixPage.css */
+.correlation-page {
+    background-color: #121212;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .correlation-image {
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    margin: 2rem 0;
+  }
+  
+  .correlation-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  

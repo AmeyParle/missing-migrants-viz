@@ -1,13 +1,238 @@
+/* General body styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/visuals/missing-migrants-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Page layout */
+.app {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1, h2 {
+  color: #fff;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* Category Grid on HomePage */
+
+.homepage-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 4rem auto; /* center horizontally with spacing above and below */
+  padding: 0 2rem; /* significant side padding */
+}
+
+.category-card {
+  background-color: #282c34;
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+.category-card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.category-card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 8rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  
+}
+
+
+.cause-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 8rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  
+}
+
+.policy-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 8rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  
+}
+
+.geo-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 8rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  
+}
+
+
+/* Visualization list */
+.viz-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.viz-card {
+  background-color: rgba(40, 40, 40, 0.9);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+
+.viz-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.viz-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.viz-description {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* key: align top instead of center */
+  padding: 2rem;
+  z-index: 9999;
+}
+.modal {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 1.5rem 2rem 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.modal p {
+  color: #ccc;
+  text-align: center;
+}
+
+.iframe-wrapper {
+  flex-grow: 1;
+  margin-top: 1rem;
+}
+
+.iframe-content {
+  width: 100%;
+  height: 600px; /* you can increase this */
+  border: none;
+  border-radius: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size:2em;
+    color: #f44336;
+    cursor: pointer;
+  
+}
+
+.motivation-section,
+.team-section {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  background-color: #555;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.motivation-section h3,
+.team-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.team-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  color:#fff;
 }
