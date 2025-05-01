@@ -2,6 +2,7 @@
   "name": "missing-migrants-main",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aparle.github.io/missing-migrants-viz",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
